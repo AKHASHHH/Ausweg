@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>ACCOUNTING SOFTWARE | AUSWEG</title>
+      <link rel="stylesheet" href="SideNavBar.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="https://kit.fontawesome.com/75443a3fa8.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+  
+  
+   <body>
+      <div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            Ausweg Accounting
+         </div>
+         <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li>
+               <a href="#" class="feat-btn"><i class="fas fa-brain"></i>Master
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="feat-show">
+                  <li><a href="Master-Company.html">Company</a></li>
+                  <li><a href="Master-Branch.html">Branch</a></li>
+                  <li><a href="Master-Employee.html">Employee</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Vendors</a></li>
+                    <li><a href="#">Products</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#" class="serv-btn"><i class="fas fa-book"></i>Features
+               <span class="fas fa-caret-down second"></span>
+               </a>
+               <ul class="serv-show">
+                  <li><a href="#">Reports</a></li>
+                  <li><a href="#">Purchases</a></li>
+                  <li><a href="#">Sales</a></li>
+            </ul>
+            <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
+            <li><a href="#"><i class="fas fa-comments"></i>Feedback</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+            <li><a href="Login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+      </nav>
+      <div class="content">
+         <div class="header">
+            Accounting Software
+         </div>
+         <p>
+            Ausweg Automations
+         </p>
+      </div>
+      <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+   </body>
+</html>
